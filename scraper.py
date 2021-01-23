@@ -73,7 +73,7 @@ def final_s():
                 print(response.headers)
             except Exception as e:
                  print(e)
-            #os.remove(file_path)
+            os.remove(file_path)
             print('combined the two csv files and created the final virtuals dataframe\nAnd then deleted the scrapedfile')
 #final_s()
 def data():

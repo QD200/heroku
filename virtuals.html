@@ -1,0 +1,4928 @@
+<!DOCTYPE html>
+<html class="ng-scope" ng-app="fortebet">
+ <head>
+  <style type="text/css">
+   @charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}
+  </style>
+  <meta charset="utf-8"/>
+  <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+  <meta content="no-referrer" name="referrer"/>
+  <meta content="width=device-width" name="viewport"/>
+  <meta content="ForteBet" name="application-name"/>
+  <meta content="/assets/images/ico/small.jpg" name="msapplication-square70x70logo"/>
+  <meta content="/assets/images/ico/medium.jpg" name="msapplication-square150x150logo"/>
+  <meta content="/assets/images/ico/wide.jpg" name="msapplication-wide310x150logo"/>
+  <meta content="/assets/images/ico/large.jpg" name="msapplication-square310x310logo"/>
+  <meta content="#2b2e31" name="msapplication-TileColor"/>
+  <meta content="no-cache, must-revalidate, post-check=0, pre-check=0" http-equiv="cache-control"/>
+  <meta content="max-age=0" http-equiv="cache-control"/>
+  <meta content="0" http-equiv="expires"/>
+  <meta content="Tue, 01 Jan 1980 1:00:00 GMT" http-equiv="expires"/>
+  <meta content="no-cache" http-equiv="pragma"/>
+  <meta content="#000" name="theme-color"/>
+  <meta content="#000" name="apple-mobile-web-app-status-bar-style"/>
+  <meta content="#000" name="msapplication-navbutton-color"/>
+  <link as="font" crossorigin="" href="/assets/fonts/Apollo.ttf" rel="preload"/>
+  <link as="font" crossorigin="" href="/assets/fonts/W4wDsBUluyw0tK3tykhXEfesZW2xOQ-xsNqO47m55DA.ttf" rel="preload"/>
+  <link as="font" crossorigin="" href="/assets/fonts/zN7GBFwfMP4uA6AR0HCoLQ.ttf" rel="preload"/>
+  <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+  <link href="/assets/images/ico/apple-touch-icon.png" rel="apple-touch-icon"/>
+  <link href="/assets/images/ico/apple-touch-icon-57x57.png" rel="apple-touch-icon" sizes="57x57"/>
+  <link href="/assets/images/ico/apple-touch-icon-72x72.png" rel="apple-touch-icon" sizes="72x72"/>
+  <link href="/assets/images/ico/apple-touch-icon-76x76.png" rel="apple-touch-icon" sizes="76x76"/>
+  <link href="/assets/images/ico/apple-touch-icon-114x114.png" rel="apple-touch-icon" sizes="114x114"/>
+  <link href="/assets/images/ico/apple-touch-icon-120x120.png" rel="apple-touch-icon" sizes="120x120"/>
+  <link href="/assets/images/ico/apple-touch-icon-144x144.png" rel="apple-touch-icon" sizes="144x144"/>
+  <link href="/assets/images/ico/apple-touch-icon-152x152.png" rel="apple-touch-icon" sizes="152x152"/>
+  <link href="/assets/images/ico/apple-touch-icon-180x180.png" rel="apple-touch-icon" sizes="180x180"/>
+  <!-- ngIf: $root.template !='zm' -->
+  <title class="ng-scope" ng-if="$root.template !='zm'">
+   Fortebet - Play for millions now!
+  </title>
+  <!-- end ngIf: $root.template !='zm' -->
+  <!-- ngIf: $root.template =='zm' -->
+  <!-- ngIf: $root.template == 'ug' -->
+  <meta class="ng-scope" content="Be part of the largest betting community in Uganda. Choose your favorite sportsbooks, live odds, virtual soccer and online casino games. ForteBet - play for billions now." name="description" ng-if="$root.template == 'ug'"/>
+  <!-- end ngIf: $root.template == 'ug' -->
+  <link href="styles/vendor-fdb94d0c5e.css" rel="stylesheet"/>
+  <link href="styles/app-3769cb5c39.css" rel="stylesheet"/>
+  <script async="" src="https://connect.facebook.net/en_US/fbevents.js">
+  </script>
+  <script async="" src="//www.google-analytics.com/analytics.js">
+  </script>
+  <script type="text/javascript">
+   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-16653543-32', '');ga('set', 'anonymizeIp',false);
+  </script>
+  <script type="text/javascript">
+   !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod? 
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n; 
+  n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0; 
+  t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window, 
+  document,'script','https://connect.facebook.net/en_US/fbevents.js'); 
+ fbq.disablePushState = true; 
+ fbq('init', '1521792804517938');
+  </script>
+  <noscript>
+   <img height="1" src="https://www.facebook.com/tr?id=1521792804517938&amp;ev=PageView&amp;noscript=1" style="display:none" width="1"/>
+  </noscript>
+  <script type="text/javascript">
+   (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:1628077,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+  </script>
+  <script async="" src="https://static.hotjar.com/c/hotjar-1628077.js?sv=6">
+  </script>
+ </head>
+ <body aria-busy="false" block-ui="main" class="ng-scope block-ui block-ui-anim-fade">
+  <!--[if lt IE 10]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+  <div class="ng-scope" ng-controller="IndexController as vm">
+   <!-- ngIf: $root.template=='ug' -->
+   <header class="ng-scope" ng-if="$root.template=='ug'" template-type="ug">
+    <nav class="navbar navbar-fixed-top">
+     <div class="container">
+      <div class="navbar-header">
+       <a class="navbar-brand" href="#/app/offer/top" ui-sref="app.offer.top" ui-sref-opts="{reload: false}">
+        <img alt="Fortebet" src="assets/images/logo.png"/>
+       </a>
+       <div class="user">
+        <div class="info">
+         <a class="btn empty ng-binding">
+          time: 06:49
+         </a>
+         <a class="btn ng-binding" href="#/app/page/client-support/en" ui-sref="app.page({page: 'client-support'})">
+          Contact Us
+         </a>
+         <!-- ngIf: !$root.client.logged -->
+         <a class="btn w150 ng-binding ng-scope" href="#/app/depositwithdrawals" ng-if="!$root.client.logged" ui-sref="app.depositwithdrawals">
+          Deposits &amp; Withdrawals
+         </a>
+         <!-- end ngIf: !$root.client.logged -->
+        </div>
+        <!-- ngIf: !$root.client.logged -->
+        <div class="ng-scope" ng-if="!$root.client.logged">
+         <a class="btn ng-binding" href="#/app/page/how-to-register/en" ui-sref="app.page({page: 'how-to-register'})">
+          How to register
+         </a>
+         <a class="btn btn-highlight btn-register ng-binding" href="#/app/registration" ui-sref="app.registration">
+          Register now
+         </a>
+         <a class="btn w150 ng-binding" href="#/app/passwordreset" ui-sref="app.passwordreset">
+          Lost password
+         </a>
+         <!--span ng-if="$root.config.devel > 0" class="btn"
+                  ng-click="vm.utils.showWsPopup({
+                      msg: {
+                      'EN': {'b': 'Something in english'},
+                      'FR': {'b': 'Zenezereee ze papaaa'}
+                      }
+                    })">
+              {{ 'EN' | translate}}
+            </span>
+            <span ng-if="!$root.config.devel" class="btn">{{ 'EN' | translate}}</span-->
+         <span class="btn ng-binding">
+          EN
+         </span>
+         <form class="form-inline ng-pristine ng-valid">
+          <input class="form-control ng-pristine ng-untouched ng-valid ng-empty" id="login" ng-model="username" ng-trim="false" placeholder="Username" type="text"/>
+          <input class="form-control ng-pristine ng-untouched ng-valid ng-empty" id="password" ng-model="password" ng-trim="false" placeholder="Password" type="password"/>
+          <button class="btn btn-highlight ng-binding" ng-click="vm.login(username, password)">
+           Login
+          </button>
+         </form>
+        </div>
+        <!-- end ngIf: !$root.client.logged -->
+        <!-- ngIf: $root.client.logged -->
+       </div>
+      </div>
+      <div class="navbar-menu">
+       <div>
+        <a class="ng-binding" href="#/app/offer/top" ng-class="{'active': vm.state.includes('app.offer') &amp;&amp; !vm.state.includes('app.offer.special')}" ui-sref="app.offer.top">
+         Sportsbook
+        </a>
+        <a class="ng-binding" href="#/app/live/preview" ng-class="{'active': vm.state.includes('app.live')}" ui-sref="app.live.preview">
+         Live
+        </a>
+        <!-- ngIf: $root.config.offer.special.enabled -->
+        <a class="ng-scope" href="#/app/offer/special/home" ng-class="{'active': vm.state.includes('app.offer.special')}" ng-if="$root.config.offer.special.enabled" ui-sref="app.offer.special.home">
+         <span class="highlight longname ng-binding">
+          Champions League
+         </span>
+        </a>
+        <!-- end ngIf: $root.config.offer.special.enabled -->
+        <a class="ng-binding" href="#/app/snippets/bestshots/en" ng-class="{'active': vm.state.params &amp;&amp; (vm.state.params.page == 'bestshots')}" ui-sref="app.snippets({page: 'bestshots'})">
+         Best shots
+        </a>
+        <!--a ui-sref="app.page({page: 'client-bonus'})"
+             ng-class="{'active': vm.state.params && (vm.state.params.page == 'client-bonus')}">{{ 'Bonus' | translate }}</a-->
+        <a class="ng-binding" href="#/app/page/client-vip/en" ng-class="{'active': vm.state.params &amp;&amp; (vm.state.params.page == 'client-vip')}" ui-sref="app.page({page: 'client-vip'})">
+         Vip
+        </a>
+        <!-- ngIf: $root.config.soccerjackpot.enabled -->
+        <!-- ngIf: $root.config.battle.enabled -->
+        <a class="ng-scope" href="#/app/battle/13" ng-if="$root.config.battle.enabled" ui-sref="app.battle" ui-sref-active="active">
+         <span class="longname ng-binding">
+          FORTEBET battle
+         </span>
+        </a>
+        <!-- end ngIf: $root.config.battle.enabled -->
+        <a class="ng-binding" href="#/app/casino" ui-sref="app.casino" ui-sref-active="active">
+         Casino
+        </a>
+        <!-- ngIf: $root.config.virtuals.enabled -->
+        <a class="ng-scope active" href="#/app/virtualsoccer" ng-if="$root.config.virtuals.enabled" ui-sref="app.virtualsoccer" ui-sref-active="active">
+         <span class="longname ng-binding">
+          Virtual Soccer
+         </span>
+        </a>
+        <!-- end ngIf: $root.config.virtuals.enabled -->
+       </div>
+      </div>
+     </div>
+    </nav>
+   </header>
+   <!-- end ngIf: $root.template=='ug' -->
+   <!-- ngIf: $root.template=='rw' -->
+   <!-- ngIf: $root.template=='zm' -->
+   <!-- uiView: -->
+   <div class="ng-scope" style="" ui-view="">
+    <main class="ng-scope">
+     <!-- uiView: -->
+     <ui-view class="ng-scope">
+      <div class="container main virtualsoccer-container ng-scope">
+       <div class="layout-noflex">
+        <div class="virtualsoccer-topmenu">
+         <!-- <div class="virtualsoccer-title-right">New match every 5 minutes</div> -->
+         <div class="virtualsoccer-title-left">
+          <!-- ngIf: vm.state.includes('app.virtualsoccer.results') -->
+          <a class="virtualsoccer-back ng-scope" href="#/app/virtualsoccer" ng-if="vm.state.includes('app.virtualsoccer.results')" ui-sref="app.virtualsoccer">
+           <span class="icon-chevron-left">
+           </span>
+           back
+          </a>
+          <!-- end ngIf: vm.state.includes('app.virtualsoccer.results') -->
+          <div class="virtualsoccer-timetostart">
+           <span>
+            Time to start:
+           </span>
+           <span class="ng-binding">
+            00:49
+           </span>
+          </div>
+         </div>
+         <div class="virtualsoccer-title-center">
+         </div>
+         <div class="virtualsoccer-title-right">
+          New match every 5 minutes
+         </div>
+        </div>
+        <div class="col-flex">
+         <div id="col-center-left">
+          <!-- uiView: -->
+          <ui-view class="ng-scope">
+           <div class="virtualsoccer-bg-light virtualsoccer-cell ng-scope" style="display: grid;grid-template-columns: 50px auto auto auto">
+            <div>
+             #
+            </div>
+            <div>
+             Time
+            </div>
+            <div>
+             Name
+            </div>
+            <div>
+             Result
+            </div>
+            <!-- ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             114
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 23, 2021 06:40
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Barcelona - V-Valencia
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             1:1 (1:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             113
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 23, 2021 06:35
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-PSG - V-Lyon
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             0:1 (0:1)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             112
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 23, 2021 06:30
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Liverpool - V-Tottenham
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             2:1 (0:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             111
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 23, 2021 06:25
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Villarreal - V-Valencia
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             2:1 (1:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             110
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 23, 2021 06:20
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Schalke - V-Wolfsburg
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             0:2 (0:1)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             109
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 23, 2021 06:15
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Tottenham - V-Everton
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             1:2 (0:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             108
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 23, 2021 06:10
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Marseille - V-Lyon
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             0:2 (0:2)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             107
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 23, 2021 06:05
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Benfica - V-Porto
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             0:2 (0:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             106
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 23, 2021 06:00
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Roma - V-Milan
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             1:2 (0:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             105
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 23, 2021 05:55
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Wolfsburg - V-B.Munich
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             0:1 (0:1)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             104
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 23, 2021 05:50
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Sevilla - V-Villarreal
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             3:0 (2:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             103
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 23, 2021 05:45
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Newcastle - V-Tottenham
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             1:3 (1:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             102
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 23, 2021 05:40
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Roma - V-Lazio
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             1:0 (1:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             101
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 23, 2021 05:35
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Villarreal - V-Atl.Madrid
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             1:0 (1:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             100
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 23, 2021 05:30
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Dortmund - V-Wolfsburg
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             0:0 (0:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             99
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 23, 2021 05:25
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Chelsea - V-Man.City
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             2:0 (1:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             98
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 23, 2021 05:20
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Lazio - V-Inter
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             0:1 (0:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             97
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 23, 2021 05:15
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Valencia - V-Real.M
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             0:0 (0:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             96
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 23, 2021 05:10
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Liverpool - V-Man.United
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             3:3 (0:3)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             95
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 23, 2021 05:05
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Schalke - V-B.Munich
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             0:1 (0:1)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             94
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 23, 2021 05:00
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Inter - V-Roma
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             1:1 (1:1)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             93
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 23, 2021 04:55
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Newcastle - V-Arsenal
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             0:5 (0:3)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             92
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 23, 2021 04:50
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Monaco - V-Marseille
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             2:0 (0:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             91
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 23, 2021 04:45
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Dortmund - V-B.Munich
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             2:0 (1:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             90
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 23, 2021 04:40
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Ajax - V-PSV
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             1:2 (0:2)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             89
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 23, 2021 04:35
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Milan - V-Lazio
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             0:2 (0:2)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             88
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 23, 2021 04:30
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Chelsea - V-Newcastle
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             3:3 (1:1)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             87
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 23, 2021 04:25
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Lyon - V-Marseille
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             0:0 (0:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             86
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 23, 2021 04:20
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Inter - V-Juventus
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             3:0 (1:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             85
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 23, 2021 04:15
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Valencia - V-Villarreal
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             2:0 (0:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             84
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 23, 2021 04:10
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Wolfsburg - V-Dortmund
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             1:1 (0:1)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             83
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 23, 2021 04:05
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Lazio - V-Roma
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             2:1 (2:1)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             82
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 23, 2021 04:00
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Barcelona - V-Valencia
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             3:0 (0:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             81
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 23, 2021 03:55
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Marseille - V-PSG
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             0:3 (0:2)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             80
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 23, 2021 03:50
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-PSV - V-Ajax
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             3:1 (1:1)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             79
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 23, 2021 03:45
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Napoli - V-Inter
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             3:1 (2:1)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             78
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 23, 2021 03:40
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Man.City - V-Newcastle
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             1:0 (0:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             77
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 23, 2021 03:35
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Real.M - V-Valencia
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             2:0 (0:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             76
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 23, 2021 03:30
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Juventus - V-Inter
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             0:2 (0:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             75
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 23, 2021 03:25
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Lyon - V-PSG
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             3:1 (1:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             74
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 23, 2021 03:20
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Liverpool - V-Everton
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             2:2 (1:1)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             73
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 23, 2021 03:15
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Atl.Madrid - V-Villarreal
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             1:2 (0:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             72
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 23, 2021 03:10
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Monaco - V-PSG
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             1:0 (0:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             71
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 23, 2021 03:05
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-B.Munich - V-Dortmund
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             0:0 (0:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             70
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 23, 2021 03:00
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Man.United - V-Tottenham
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             2:1 (2:1)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             69
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 23, 2021 02:55
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V.Barcelona - V-Atl.Madrid
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             0:0 (0:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             68
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 23, 2021 02:50
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Lazio - V-Napoli
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             2:1 (0:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             67
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 23, 2021 02:45
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Chelsea - V-Man.City
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             0:2 (0:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             66
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 23, 2021 02:40
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Atl.Madrid - V-Barcelona
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             3:3 (1:2)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             65
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 23, 2021 02:35
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Dortmund - V-Wolfsburg
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             3:0 (2:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             64
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 23, 2021 02:30
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Man.United - V-Arsenal
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             2:0 (0:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             63
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 23, 2021 02:25
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Barcelona - V-Villarreal
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             2:1 (1:1)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             62
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 23, 2021 02:20
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Schalke - V-Leverkusen
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             4:3 (2:2)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             61
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 23, 2021 02:15
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Everton - V-Man.United
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             4:1 (2:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             60
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 23, 2021 02:10
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Benfica - V-Sporting
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             2:1 (2:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             59
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 23, 2021 02:05
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-B.Munich - V-Wolfsburg
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             4:1 (3:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             58
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 23, 2021 02:00
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Real.M - V-Sevilla
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             0:1 (0:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             57
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 23, 2021 01:55
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Liverpool - V-Tottenham
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             0:1 (0:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             56
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 23, 2021 01:50
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Lazio - V-Inter
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             1:0 (0:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             55
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 23, 2021 01:45
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Real.M - V-Atl.Madrid
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             1:0 (1:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             54
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 23, 2021 01:40
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Schalke - V-B.Munich
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             1:1 (0:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             53
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 23, 2021 01:35
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Benfica - V-Porto
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             1:1 (0:1)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             52
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 23, 2021 01:30
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Everton - V-Man.City
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             1:0 (0:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             51
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 23, 2021 01:25
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Milan - V-Napoli
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             1:1 (0:1)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             50
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 23, 2021 01:20
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Leverkusen - V-Wolfsburg
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             1:1 (0:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             49
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 23, 2021 01:15
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Barcelona - V-Real.M
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             0:0 (0:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             48
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 23, 2021 01:10
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Napoli - V-Milan
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             0:2 (0:1)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             47
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 23, 2021 01:05
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Arsenal - V-Chelsea
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             1:2 (0:1)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             46
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 23, 2021 01:00
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Ajax - V-PSV
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             2:1 (2:1)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             45
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 23, 2021 00:55
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Barcelona - V-Valencia
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             1:0 (1:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             44
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 23, 2021 00:50
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Milan - V-Lazio
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             4:1 (2:1)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             43
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 23, 2021 00:45
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-PSG - V-Lyon
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             1:1 (0:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             42
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 23, 2021 00:40
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Dortmund - V-B.Munich
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             0:3 (0:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             41
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 23, 2021 00:35
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Milan - V-Roma
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             0:2 (0:1)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             40
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 23, 2021 00:30
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Sevilla - V-Valencia
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             0:1 (0:1)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             39
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 23, 2021 00:25
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Man.United - V-Liverpool
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             1:0 (0:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             38
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 23, 2021 00:20
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-B.Munich - V-Schalke
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             0:2 (0:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             37
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 23, 2021 00:15
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Milan - V-Inter
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             1:0 (0:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             36
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 23, 2021 00:10
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Newcastle - V-Chelsea
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             1:2 (0:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             35
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 23, 2021 00:05
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V.Barcelona - V-Atl.Madrid
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             2:2 (0:1)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             34
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 23, 2021 00:00
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Wolfsburg - V-Dortmund
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             0:2 (0:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             33
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 23:55
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Liverpool - V-Chelsea
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             2:2 (2:1)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             32
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 23:50
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Napoli - V-Juventus
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             2:1 (2:1)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             31
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 23:45
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Sevilla - V-Villarreal
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             1:2 (0:1)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             30
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 23:40
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Leverkusen - V-Schalke
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             0:0 (0:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             29
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 23:35
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Inter - V-Milan
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             1:2 (0:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             28
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 23:30
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Tottenham - V-Newcastle
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             0:1 (0:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             27
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 23:25
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Schalke - V-Wolfsburg
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             0:1 (0:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             26
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 23:20
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Sporting - V-Benfica
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             0:1 (0:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             25
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 23:15
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Everton - V-Man.United
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             1:0 (0:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             24
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 23:10
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Atl.Madrid - V-Villarreal
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             3:0 (1:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             23
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 23:05
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Napoli - V-Roma
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             2:2 (1:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             22
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 23:00
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Man.United - V-Chelsea
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             1:1 (1:1)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             21
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 22:55
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Sevilla - V-Barcelona
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             2:0 (0:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             20
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 22:50
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Benfica - V-Porto
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             0:3 (0:2)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             19
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 22:45
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Everton - V-Tottenham
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             1:2 (0:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             18
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 22:40
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Schalke - V-B.Munich
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             1:4 (0:2)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             17
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 22:35
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Lazio - V-Napoli
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             0:1 (0:1)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             16
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 22:30
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Tottenham - V-Chelsea
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             1:0 (0:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             15
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 22:25
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Barcelona - V-Sevilla
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             0:1 (0:1)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             14
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 22:20
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Inter - V-Napoli
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             1:2 (0:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             13
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 22:15
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Newcastle - V-Tottenham
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             2:3 (2:1)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             12
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 22:10
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Sporting - V-Porto
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             2:0 (0:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             11
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 22:05
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Juventus - V-Roma
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             1:2 (1:1)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             10
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 22:00
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Atl.Madrid - V-Sevilla
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             2:0 (0:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             9
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 21:55
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Man.City - V-Tottenham
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             3:3 (0:3)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             8
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 21:50
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Marseille - V-Lyon
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             0:0 (0:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             7
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 21:45
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Villarreal - V-Real.M
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             1:1 (0:1)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             6
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 21:40
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Porto - V-Benfica
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             4:4 (3:1)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             5
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 21:35
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Man.United - V-Liverpool
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             1:0 (1:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             4
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 21:30
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Lazio - V-Juventus
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             0:1 (0:1)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             3
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 21:25
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-B.Munich - V-Wolfsburg
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             1:0 (0:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             2
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 21:20
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Villarreal - V-Barcelona
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             2:2 (0:1)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             1
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 21:15
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Newcastle - V-Chelsea
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             2:2 (1:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             288
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 21:10
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Wolfsburg - V-Dortmund
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             2:0 (2:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             287
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 21:05
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Valencia - V-Real.M
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             0:3 (0:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             286
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 21:00
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Inter - V-Juventus
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             0:0 (0:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             285
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 20:55
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Man.City - V-Newcastle
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             1:0 (1:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             284
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 20:50
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Real.M - V-Valencia
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             0:2 (0:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             283
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 20:45
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-B.Munich - V-Dortmund
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             4:1 (3:1)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             282
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 20:40
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Arsenal - V-Newcastle
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             3:3 (2:1)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             281
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 20:35
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Inter - V-Milan
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             0:1 (0:1)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             280
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 20:30
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Wolfsburg - V-Leverkusen
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             3:1 (1:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             279
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 20:25
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Man.United - V-Tottenham
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             1:0 (1:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             278
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 20:20
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Lazio - V-Roma
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             0:2 (0:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             277
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 20:15
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Wolfsburg - V-B.Munich
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             2:1 (1:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             276
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 20:10
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Villarreal - V-Atl.Madrid
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             1:1 (1:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             275
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 20:05
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Liverpool - V-Tottenham
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             2:1 (1:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             274
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 20:00
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Juventus - V-Lazio
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             1:5 (0:3)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             273
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 19:55
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Leverkusen - V-Dortmund
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             1:0 (1:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             272
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 19:50
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Sevilla - V-Barcelona
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             3:3 (1:3)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             271
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 19:45
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Porto - V-Sporting
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             0:1 (0:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             270
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 19:40
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Tottenham - V-Everton
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             0:2 (0:1)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             269
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 19:35
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Juventus - V-Inter
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             0:1 (0:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             268
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 19:30
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Barcelona - V-Valencia
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             3:2 (2:2)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             267
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 19:25
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Liverpool - V-Man.United
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             3:5 (2:2)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             266
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 19:20
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Milan - V-Inter
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             2:1 (2:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             265
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 19:15
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Ajax - V-PSV
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             1:2 (1:2)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             264
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 19:10
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Sevilla - V-Villarreal
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             1:0 (1:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             263
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 19:05
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Milan - V-Juventus
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             3:0 (1:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             262
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 19:00
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Everton - V-Arsenal
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             2:0 (0:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             261
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 18:55
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Monaco - V-Marseille
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             0:1 (0:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             260
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 18:50
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Barcelona - V-Villarreal
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             0:2 (0:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             259
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 18:45
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Wolfsburg - V-Schalke
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             1:1 (1:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             258
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 18:40
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Roma - V-Inter
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             4:1 (2:1)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             257
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 18:35
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Valencia - V-Barcelona
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             1:2 (1:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             256
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 18:30
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Man.City - V-Everton
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             2:3 (1:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             255
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 18:25
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Dortmund - V-Leverkusen
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             2:1 (2:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             254
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 18:20
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V.Barcelona - V-Atl.Madrid
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             2:1 (1:1)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             253
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 18:15
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Sporting - V-Porto
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             0:0 (0:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             252
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 18:10
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Tottenham - V-Chelsea
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             2:5 (0:3)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             251
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 18:05
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Monaco - V-Lyon
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             2:1 (0:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             250
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 18:00
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Valencia - V-Sevilla
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             1:2 (0:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             249
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 17:55
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Milan - V-Roma
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             4:0 (1:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             248
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 17:50
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-B.Munich - V-Wolfsburg
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             1:2 (1:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             247
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 17:45
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Everton - V-Chelsea
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             0:3 (0:1)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             246
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 17:40
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Napoli - V-Milan
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             0:1 (0:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             245
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 17:35
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Leverkusen - V-Wolfsburg
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             0:2 (0:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             244
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 17:30
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-PSG - V-Monaco
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             1:0 (0:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             243
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 17:25
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Lazio - V-Juventus
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             0:1 (0:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             242
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 17:20
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Sporting - V-Benfica
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             3:0 (3:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             241
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 17:15
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Man.United - V-Tottenham
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             3:3 (1:1)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             240
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 17:10
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Lazio - V-Milan
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             1:1 (0:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             239
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 17:05
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Marseille - V-Lyon
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             1:1 (1:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             238
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 17:00
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Arsenal - V-Liverpool
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             2:2 (0:2)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             237
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 16:55
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Dortmund - V-Wolfsburg
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             1:2 (0:2)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             236
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 16:50
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Real.M - V-Barcelona
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             0:0 (0:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             235
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 16:45
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Inter - V-Napoli
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             0:2 (0:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             234
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 16:40
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Monaco - V-PSG
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             0:2 (0:2)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             233
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 16:35
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Dortmund - V-Schalke
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             1:1 (0:1)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             232
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 16:30
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Chelsea - V-Everton
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             0:1 (0:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             231
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 16:25
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Villarreal - V-Real.M
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             1:1 (0:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             230
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 16:20
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Leverkusen - V-Dortmund
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             3:3 (3:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             229
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 16:15
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Man.City - V-Newcastle
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             2:0 (0:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             228
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 16:10
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-PSV - V-Ajax
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             0:2 (0:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             227
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 16:05
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Roma - V-Lazio
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             1:0 (0:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             226
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 16:00
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Schalke - V-B.Munich
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             1:3 (0:1)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             225
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 15:55
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Newcastle - V-Liverpool
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             1:1 (0:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             224
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 15:50
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-PSG - V-Lyon
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             1:1 (0:1)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             223
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 15:45
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Roma - V-Milan
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             1:2 (0:1)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             222
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 15:40
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Chelsea - V-Man.City
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             0:3 (0:1)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             221
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 15:35
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Porto - V-Benfica
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             0:5 (0:3)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             220
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 15:30
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Real.M - V-Villarreal
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             1:4 (0:3)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             219
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 15:25
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Newcastle - V-Man.United
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             1:3 (0:3)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             218
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 15:20
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Wolfsburg - V-B.Munich
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             1:0 (1:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             217
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 15:15
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Inter - V-Roma
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             1:0 (1:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             216
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 15:10
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Liverpool - V-Man.United
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             3:1 (3:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             215
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 15:05
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Monaco - V-Lyon
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             1:0 (1:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             214
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 15:00
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Lazio - V-Napoli
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             3:1 (1:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             213
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 14:55
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Atl.Madrid - V-Villarreal
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             1:0 (0:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             212
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 14:50
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Everton - V-Chelsea
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             1:0 (0:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             211
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 14:45
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Lazio - V-Roma
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             2:1 (2:1)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             210
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 14:40
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Villarreal - V-Barcelona
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             1:0 (0:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             209
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 14:35
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Tottenham - V-Newcastle
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             0:2 (0:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             208
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 14:30
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Inter - V-Lazio
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             0:3 (0:3)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             207
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 14:25
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-B.Munich - V-Wolfsburg
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             5:2 (1:2)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             206
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 14:20
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Man.United - V-Man.City
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             2:2 (0:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             205
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 14:15
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Napoli - V-Milan
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             0:1 (0:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             204
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 14:10
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Schalke - V-Dortmund
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             1:0 (1:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             203
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 14:05
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Everton - V-Man.United
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             3:4 (0:3)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             202
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 14:00
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Valencia - V-Real.M
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             2:0 (0:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             201
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 13:55
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Marseille - V-Lyon
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             2:1 (0:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             200
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 13:50
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Dortmund - V-Wolfsburg
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             1:1 (1:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             199
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 13:45
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Chelsea - V-Liverpool
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             1:0 (0:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             198
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 13:40
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Atl.Madrid - V-Real.M
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             3:1 (3:1)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             197
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 13:35
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Lazio - V-Juventus
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             0:3 (0:2)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             196
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 13:30
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Wolfsburg - V-Schalke
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             2:2 (2:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             195
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 13:25
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Tottenham - V-Man.City
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             2:0 (2:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             194
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 13:20
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Villarreal - V-Sevilla
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             0:0 (0:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             193
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 13:15
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Lyon - V-PSG
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             1:1 (0:1)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             192
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 13:10
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Liverpool - V-Arsenal
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             1:2 (1:2)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             191
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 13:05
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Benfica - V-Sporting
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             1:2 (0:2)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             190
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 13:00
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Milan - V-Roma
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             2:2 (1:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             189
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 12:55
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Leverkusen - V-Wolfsburg
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             0:0 (0:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             188
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 12:50
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Atl.Madrid - V-Valencia
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             2:0 (0:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             187
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 12:45
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Napoli - V-Inter
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             0:3 (0:2)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             186
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 12:40
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Wolfsburg - V-Leverkusen
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             1:0 (0:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             185
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 12:35
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Atl.Madrid - V-Barcelona
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             3:3 (0:3)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             184
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 12:30
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Milan - V-Juventus
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             1:3 (0:1)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             183
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 12:25
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Chelsea - V-Tottenham
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             3:3 (3:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             182
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 12:20
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Dortmund - V-Schalke
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             3:3 (0:2)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             181
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 12:15
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Barcelona - V-Sevilla
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             4:1 (1:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             180
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 12:10
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Everton - V-Arsenal
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             1:3 (0:3)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             179
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 12:05
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Wolfsburg - V-Dortmund
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             1:2 (0:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             178
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 12:00
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Inter - V-Roma
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             1:2 (0:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             177
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 11:55
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Valencia - V-Barcelona
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             2:5 (1:3)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             176
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 11:50
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Lyon - V-Monaco
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             1:1 (0:1)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             175
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 11:45
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Sporting - V-Benfica
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             1:1 (0:1)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             174
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 11:40
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Tottenham - V-Everton
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             0:1 (0:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             173
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 11:35
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Roma - V-Juventus
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             2:1 (0:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             172
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 11:30
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Villarreal - V-Real.M
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             1:1 (1:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             171
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 11:25
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-B.Munich - V-Leverkusen
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             0:2 (0:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             170
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 11:20
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Liverpool - V-Chelsea
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             0:2 (0:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             169
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 11:15
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Roma - V-Milan
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             2:1 (0:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             168
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 11:10
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-PSG - V-Marseille
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             1:1 (1:1)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             167
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 11:05
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Schalke - V-Dortmund
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             0:0 (0:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             166
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 11:00
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Barcelona - V-Villarreal
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             1:0 (0:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             165
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 10:55
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Newcastle - V-Man.City
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             1:1 (1:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             164
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 10:50
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-B.Munich - V-Schalke
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             2:1 (1:1)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             163
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 10:45
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Napoli - V-Roma
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             1:1 (0:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             162
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 10:40
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Barcelona - V-Valencia
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             2:1 (1:1)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             161
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 10:35
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Marseille - V-PSG
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             0:2 (0:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             160
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 10:30
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Man.United - V-Newcastle
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             0:1 (0:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             159
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 10:25
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Villarreal - V-Valencia
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             2:1 (1:1)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             158
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 10:20
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Juventus - V-Napoli
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             1:4 (0:1)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             157
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 10:15
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Liverpool - V-Newcastle
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             0:1 (0:1)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             156
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 10:10
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-PSG - V-Lyon
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             2:2 (1:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             155
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 10:05
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Valencia - V-Sevilla
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             2:1 (1:1)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             154
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 10:00
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Porto - V-Benfica
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             0:2 (0:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             153
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 09:55
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Man.City - V-Man.United
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             0:2 (0:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             152
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 09:50
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Marseille - V-Monaco
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             4:1 (2:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             151
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 09:45
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Real.M - V-Atl.Madrid
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             0:0 (0:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             150
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 09:40
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Liverpool - V-Tottenham
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             0:1 (0:1)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             149
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 09:35
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Juventus - V-Milan
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             2:0 (0:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             148
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 09:30
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Lyon - V-Marseille
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             1:0 (0:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             147
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 09:25
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Everton - V-Man.United
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             0:2 (0:2)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             146
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 09:20
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Valencia - V-Real.M
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             1:0 (1:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             145
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 09:15
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Juventus - V-Roma
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             1:2 (1:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             144
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 09:10
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Monaco - V-Lyon
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             1:0 (0:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             143
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 09:05
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Sevilla - V-Barcelona
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             1:3 (0:3)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             142
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 09:00
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Juventus - V-Inter
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             1:0 (0:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             141
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 08:55
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Man.United - V-Tottenham
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             2:1 (1:1)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             140
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 08:50
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Wolfsburg - V-B.Munich
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             2:2 (0:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             139
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 08:45
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Villarreal - V-Real.M
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             0:2 (0:1)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             138
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 08:40
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Lazio - V-Milan
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             0:0 (0:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             137
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 08:35
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Tottenham - V-Man.United
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             2:2 (2:2)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             136
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 08:30
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Villarreal - V-Atl.Madrid
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             1:1 (0:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             135
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 08:25
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Napoli - V-Lazio
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             2:1 (1:1)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             134
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 08:20
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Man.City - V-Chelsea
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             2:1 (2:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             133
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 08:15
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Sporting - V-Benfica
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             1:2 (0:1)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             132
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 08:10
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-PSV - V-Ajax
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             0:2 (0:1)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             131
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 08:05
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Inter - V-Napoli
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             0:0 (0:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             130
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 08:00
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Atl.Madrid - V-Real.M
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             0:2 (0:2)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             129
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 07:55
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-B.Munich - V-Leverkusen
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             2:0 (0:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             128
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 07:50
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Napoli - V-Inter
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             2:1 (2:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             127
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 07:45
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Porto - V-Sporting
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             2:0 (0:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             126
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 07:40
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Arsenal - V-Tottenham
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             0:1 (0:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             125
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 07:35
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Juventus - V-Napoli
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             2:1 (1:1)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             124
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 07:30
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Sevilla - V-Atl.Madrid
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             1:0 (0:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             123
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 07:25
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Monaco - V-PSG
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             2:3 (1:2)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             122
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 07:20
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Newcastle - V-Everton
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             2:0 (0:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             121
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 07:15
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V.Barcelona - V-Atl.Madrid
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             1:1 (1:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             120
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 07:10
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Leverkusen - V-B.Munich
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             2:2 (0:2)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             119
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 07:05
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Milan - V-Juventus
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             2:3 (1:1)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             118
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 07:00
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Benfica - V-Sporting
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             2:0 (0:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             117
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 06:55
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-PSG - V-Lyon
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             1:2 (0:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+            <div class="ng-binding ng-scope" ng-repeat-start="result in vm.results">
+             116
+            </div>
+            <div class="ng-binding ng-scope">
+             Jan 22, 2021 06:50
+            </div>
+            <div class="ng-binding ng-scope">
+             <i class="virtualsoccer-ico-sport ico-soccer">
+             </i>
+             V-Arsenal - V-Newcastle
+            </div>
+            <div class="ng-binding ng-scope" ng-repeat-end="">
+             3:0 (1:0)
+            </div>
+            <!-- end ngRepeat: result in vm.results -->
+           </div>
+          </ui-view>
+         </div>
+         <div id="col-right">
+          <!-- ngIf: $root.config.virtuals.default -->
+          <div class="cursor-pointer ng-scope" ng-if="$root.config.virtuals.default" style="display: flex; background: #5f3822; width:  100%; height: 44px; line-height: 44px; font-size: 16px">
+           <!-- ngIf: vm.selectedFrame === 'stream' -->
+           <div class="ng-scope" ng-if="vm.selectedFrame === 'stream'" style="background-color: #d3580c;width: 50%; text-align: center">
+            STREAM
+           </div>
+           <!-- end ngIf: vm.selectedFrame === 'stream' -->
+           <!-- ngIf: vm.selectedFrame === 'stream' -->
+           <div class="ng-scope" ng-click="vm.selectFrame('tracker')" ng-if="vm.selectedFrame === 'stream'" style="width: 50%; text-align: center">
+            TRACKER
+           </div>
+           <!-- end ngIf: vm.selectedFrame === 'stream' -->
+           <!-- ngIf: vm.selectedFrame === 'tracker' -->
+           <!-- ngIf: vm.selectedFrame === 'tracker' -->
+          </div>
+          <!-- end ngIf: $root.config.virtuals.default -->
+          <!-- ngIf: vm.selectedFrame === 'stream' -->
+          <iframe class="virtualsoccer-scoreboard ng-scope" ng-if="vm.selectedFrame === 'stream'" ng-src="https://zweb4ug.com/forteugvideo/index.php" scrolling="no" src="https://zweb4ug.com/forteugvideo/index.php">
+          </iframe>
+          <!-- end ngIf: vm.selectedFrame === 'stream' -->
+          <!-- ngIf: vm.selectedFrame === 'tracker' -->
+          <!-- ngIf: $root.template=='ug' -->
+          <div class="box box-ticket ng-scope ng-isolate-scope" ng-if="$root.template=='ug'" template-type="ug">
+           <div class="box clearfix">
+            <!-- ngIf: vm.type == 'prematch' -->
+            <!-- ngIf: vm.type == 'live' -->
+            <!-- ngIf: vm.type == 'virtualsoccer' -->
+            <ul class="nav nav-tabs ticket-slip ng-scope" ng-if="vm.type == 'virtualsoccer'">
+             <li class="active live">
+              <a>
+               VIRTUAL SOCCER SLIP
+               <span class="count ng-binding ng-hide" data-toggle="tooltip" ng-show="vm.ticketItemsCount(vm.virtualSoccerIndex)" title="COUNT OF EVENTS ON THE BET SLIP">
+                0
+               </span>
+              </a>
+             </li>
+             <li>
+              <!-- ngIf: $root.stickTicket -->
+              <!-- ngIf: !$root.stickTicket -->
+              <span class="ico-pin active ng-scope" data-toggle="tooltip" ng-if="!$root.stickTicket" ng-mousedown="vm.togglePin()" title="PIN UP THE BET SLIP">
+              </span>
+              <!-- end ngIf: !$root.stickTicket -->
+             </li>
+            </ul>
+            <!-- end ngIf: vm.type == 'virtualsoccer' -->
+           </div>
+           <div aria-busy="false" block-ui="blockUI_ticket" class="tab-content ng-scope block-ui block-ui-anim-fade">
+            <div class="tab-pane fade in active">
+             <!-- ngIf: vm.type == 'prematch' -->
+             <!-- ngIf: vm.type == 'live' || vm.type == 'virtualsoccer' -->
+             <ul class="nav nav-tabs ticket-mode ng-scope" ng-if="vm.type == 'live' || vm.type == 'virtualsoccer'">
+              <!-- ngRepeat: t in ::vm.ticket.availableTypes | limitTo: 1 -->
+              <li class="live string-uppercase ng-scope active" ng-class="{'active': t == vm.ticket.type}" ng-repeat="t in ::vm.ticket.availableTypes | limitTo: 1">
+               <a class="ng-binding">
+                ako
+               </a>
+              </li>
+              <!-- end ngRepeat: t in ::vm.ticket.availableTypes | limitTo: 1 -->
+              <li>
+               <span aria-hidden="true" class="ico-trash" data-toggle="tooltip" ng-mousedown="vm.ticketClean()" title="DELETE ALL">
+               </span>
+              </li>
+             </ul>
+             <!-- end ngIf: vm.type == 'live' || vm.type == 'virtualsoccer' -->
+             <div class="tab-content ticket">
+              <div class="tab-pane fade active in" ng-class="{'active in': vm.ticket.type == 'ako'}" ng-show="vm.ticket.type == 'ako'">
+               <!-- ngIf: !vm.ticket.items.length -->
+               <div class="tab-pane ticket-empty-div ng-scope" ng-if="!vm.ticket.items.length">
+                <div class="ticket-empty">
+                 <!-- ngIf: vm.ticket.index != vm.liveIndex && vm.ticket.index != vm.virtualSoccerIndex -->
+                 <!-- ngIf: vm.ticket.index == vm.liveIndex -->
+                 <!-- ngIf: vm.ticket.index == vm.virtualSoccerIndex -->
+                 <p class="empty-info ng-scope" ng-if="vm.ticket.index == vm.virtualSoccerIndex">
+                  Your VIRTUAL SOCCER ticket
+                  <br/>
+                  is still empty
+                 </p>
+                 <!-- end ngIf: vm.ticket.index == vm.virtualSoccerIndex -->
+                 <p style="margin-left: 10px; margin-right: 10px">
+                  Click on the appropriate odds to add it into your ticket.
+                 </p>
+                </div>
+               </div>
+               <!-- end ngIf: !vm.ticket.items.length -->
+               <!-- ngIf: vm.ticket.items.length -->
+              </div>
+             </div>
+            </div>
+            <div block-ui-container="" class="block-ui-container ng-scope">
+             <div class="block-ui-overlay">
+             </div>
+             <div aria-atomic="true" aria-live="assertive" class="block-ui-message-container">
+              <div class="block-ui-message ng-binding" ng-class="$_blockUiMessageClass">
+               Loading ...
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+          <!-- end ngIf: $root.template=='ug' -->
+          <!-- ngIf: $root.template=='rw' -->
+          <!-- ngIf: $root.template=='zm' -->
+          <form class="ticket-verification ng-pristine ng-valid ng-isolate-scope ng-valid-minlength ng-valid-maxlength" name="form">
+           <label for="ticket-number-ver">
+            Ticket number
+           </label>
+           <input autocomplete="off" class="ng-pristine ng-untouched ng-valid ng-empty ng-valid-minlength ng-valid-maxlength" id="ticket-number-ver" name="number" ng-maxlength="18" ng-minlength="14" ng-model="vm.number" type="text" valid-digits="18"/>
+           <button class="btn" disabled="disabled" ng-click="vm.check()" ng-disabled="(vm.number.length &lt; 14 || vm.number.length &gt; 18) || (vm.number == null)">
+            Check Ticket
+           </button>
+           <div class="ng-inactive" ng-messages="form.number.$error" role="alert" style="width: 100%; text-align: center">
+            <!-- ngMessage: minlength -->
+           </div>
+          </form>
+         </div>
+        </div>
+        <div class="virtualsoccer-offer-result-container">
+         <div class="virtualsoccer-offer-results-menu" href="#/app/virtualsoccer/results" ui-sref="app.virtualsoccer.results">
+          <span>
+           Results
+          </span>
+         </div>
+         <div class="virtualsoccer-offer-result-title">
+          <i class="virtualsoccer-ico-sport-big ico-soccer">
+          </i>
+          <span>
+           Last 3 results
+          </span>
+         </div>
+         <!-- ngRepeat: result in vm.data.lastThreeResults -->
+         <div class="virtualsoccer-offer-result-item ng-scope" ng-repeat="result in vm.data.lastThreeResults" style="">
+          <span class="ng-binding">
+           113:
+          </span>
+          <span class="ng-binding">
+           V-PSG - V-Lyon 0:1 (0:1)
+          </span>
+         </div>
+         <!-- end ngRepeat: result in vm.data.lastThreeResults -->
+         <div class="virtualsoccer-offer-result-item ng-scope" ng-repeat="result in vm.data.lastThreeResults">
+          <span class="ng-binding">
+           112:
+          </span>
+          <span class="ng-binding">
+           V-Liverpool - V-Tottenham 2:1 (0:0)
+          </span>
+         </div>
+         <!-- end ngRepeat: result in vm.data.lastThreeResults -->
+         <div class="virtualsoccer-offer-result-item ng-scope" ng-repeat="result in vm.data.lastThreeResults">
+          <span class="ng-binding">
+           111:
+          </span>
+          <span class="ng-binding">
+           V-Villarreal - V-Valencia 2:1 (1:0)
+          </span>
+         </div>
+         <!-- end ngRepeat: result in vm.data.lastThreeResults -->
+        </div>
+       </div>
+      </div>
+     </ui-view>
+    </main>
+   </div>
+   <!-- ngIf: $root.template=='ug' -->
+   <footer class="ng-scope" ng-if="$root.template=='ug'" template-type="ug">
+    <div>
+     <span style="margin-right: 20px;line-height: 30px">
+      No minors allowed
+     </span>
+     <div style="display: none">
+      18
+     </div>
+     <div>
+      <!-- ngIf: !$root.local -->
+      <a class="cursor-pointer ng-scope" href="https://mobile.fortebet.ug" ng-if="!$root.local">
+       <img alt="Mobile" src="assets/images/viewmode-mobile.png"/>
+       Mobile site
+      </a>
+      <!-- end ngIf: !$root.local -->
+     </div>
+     <div href="#/app/depositwithdrawals/payrequest/payments_deposit/en" ui-sref="app.depositwithdrawals.payrequest({page: 'payments_deposit'})">
+      Deposit at branch
+     </div>
+     <div class="" href="#/app/depositwithdrawals/depositmtn" ng-show="$root.config.mobilemoney.payin.enabled" ui-sref="app.depositwithdrawals.depositmtn">
+      MTN Mobile Money
+     </div>
+     <div class="" href="#/app/depositwithdrawals/depositairtel" ng-show="$root.config.mobilemoney.payin.enabled" ui-sref="app.depositwithdrawals.depositairtel">
+      Airtel Money
+     </div>
+     <span style="margin-left: 20px;line-height: 30px">
+      Betting can be addictive and psychologically harmful.
+     </span>
+    </div>
+    <nav>
+     <div>
+      <h3>
+       Sport Betting
+      </h3>
+      <ul>
+       <!--li><a ui-sref="app.page({page: 'client-bonus'})">Bonuses</a></li-->
+       <li>
+        <a href="#/app/depositwithdrawals" ui-sref="app.depositwithdrawals">
+         Deposits and withdrawals
+        </a>
+       </li>
+       <!--li><a>Competitions</a></li-->
+       <li>
+        <a href="pdf/today_offer.pdf">
+         Today offer PDF
+        </a>
+       </li>
+       <li>
+        <a href="pdf/full_offer.pdf">
+         Full offer PDF
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div>
+      <h3>
+       Live Betting
+      </h3>
+      <ul>
+       <li>
+        <a href="#/app/live/preview" ui-sref="app.live.preview">
+         In play
+        </a>
+       </li>
+       <li>
+        <a href="#/app/live/calendar" ui-sref="app.live.calendar">
+         Schedule
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="ng-isolate-scope" on-select="vm.topBetSelect(idTopBet)" template-type="footer">
+      <h3>
+       TOP Bets
+      </h3>
+      <ul>
+       <!-- ngRepeat: item in vm.topBets | limitTo: 9 -->
+       <li class="ng-scope" ng-repeat="item in vm.topBets | limitTo: 9" style="">
+        <a class="ng-binding" ng-click="vm.select(item.id)">
+         Champions League
+        </a>
+       </li>
+       <!-- end ngRepeat: item in vm.topBets | limitTo: 9 -->
+       <li class="ng-scope" ng-repeat="item in vm.topBets | limitTo: 9">
+        <a class="ng-binding" ng-click="vm.select(item.id)">
+         Europa League
+        </a>
+       </li>
+       <!-- end ngRepeat: item in vm.topBets | limitTo: 9 -->
+       <li class="ng-scope" ng-repeat="item in vm.topBets | limitTo: 9">
+        <a class="ng-binding" ng-click="vm.select(item.id)">
+         England - Premier League
+        </a>
+       </li>
+       <!-- end ngRepeat: item in vm.topBets | limitTo: 9 -->
+       <li class="ng-scope" ng-repeat="item in vm.topBets | limitTo: 9">
+        <a class="ng-binding" ng-click="vm.select(item.id)">
+         England - FA Cup
+        </a>
+       </li>
+       <!-- end ngRepeat: item in vm.topBets | limitTo: 9 -->
+       <li class="ng-scope" ng-repeat="item in vm.topBets | limitTo: 9">
+        <a class="ng-binding" ng-click="vm.select(item.id)">
+         Germany - Bundesliga
+        </a>
+       </li>
+       <!-- end ngRepeat: item in vm.topBets | limitTo: 9 -->
+       <li class="ng-scope" ng-repeat="item in vm.topBets | limitTo: 9">
+        <a class="ng-binding" ng-click="vm.select(item.id)">
+         Italy - Serie A
+        </a>
+       </li>
+       <!-- end ngRepeat: item in vm.topBets | limitTo: 9 -->
+       <li class="ng-scope" ng-repeat="item in vm.topBets | limitTo: 9">
+        <a class="ng-binding" ng-click="vm.select(item.id)">
+         Spain - LaLiga
+        </a>
+       </li>
+       <!-- end ngRepeat: item in vm.topBets | limitTo: 9 -->
+       <li class="ng-scope" ng-repeat="item in vm.topBets | limitTo: 9">
+        <a class="ng-binding" ng-click="vm.select(item.id)">
+         France - Ligue 1
+        </a>
+       </li>
+       <!-- end ngRepeat: item in vm.topBets | limitTo: 9 -->
+       <li class="ng-scope" ng-repeat="item in vm.topBets | limitTo: 9">
+        <a class="ng-binding" ng-click="vm.select(item.id)">
+         Netherlands - Eredivisie
+        </a>
+       </li>
+       <!-- end ngRepeat: item in vm.topBets | limitTo: 9 -->
+      </ul>
+     </div>
+     <div>
+      <h3>
+       Company
+      </h3>
+      <ul>
+       <li>
+        <a href="#/app/page/about-us/en" ui-sref="app.page({page: 'about-us'})">
+         About us
+        </a>
+       </li>
+       <li>
+        <a href="#/app/page/client-support/en" ui-sref="app.page({page: 'client-support'})">
+         Contact us
+        </a>
+       </li>
+       <li>
+        <a href="#/app/page/cooperation/en" ui-sref="app.page({page: 'cooperation'})">
+         Cooperation
+        </a>
+       </li>
+       <li>
+        <a href="#/app/termsconditions/retail_betting_rules/en" ui-sref="app.termsconditions">
+         Terms &amp; Conditions
+        </a>
+       </li>
+       <li>
+        <a href="#/app/registration" ui-sref="app.registration">
+         Register
+        </a>
+       </li>
+       <li>
+        <a href="#/app/page/client-vip/en" ui-sref="app.page({page: 'client-vip'})">
+         VIP
+        </a>
+       </li>
+       <li>
+        <a href="#/app/termsconditions/rules_privacy_policy/en" ui-sref="app.termsconditions({page: 'rules_privacy_policy'})">
+         Privacy policy
+        </a>
+       </li>
+      </ul>
+     </div>
+     <!-- ngIf: !$root.local -->
+     <div class="ng-scope" ng-if="!$root.local">
+      <h3>
+       Social Media
+      </h3>
+      <ul>
+       <li>
+        <a href="https://www.facebook.com/fortebet.ug/" target="_blank">
+         Facebook
+        </a>
+       </li>
+      </ul>
+     </div>
+     <!-- end ngIf: !$root.local -->
+    </nav>
+    <div>
+     Grand Victoria Ltd trading as ForteBet, under license by the Grand Victoria Ltd, is a company incorporated in the Republic of Uganda (Reg. Number 149080) and licensed by the National Lotteries Board of Uganda (Sportsbetting and Online Casino license number Reg. 3 of the Gaming and Pool Betting – Control and Taxation – Regulations).
+    </div>
+   </footer>
+   <!-- end ngIf: $root.template=='ug' -->
+   <!-- ngIf: $root.template=='rw' -->
+   <!-- ngIf: $root.template=='zm' -->
+  </div>
+  <script src="scripts/vendor-029b91347e.js" type="text/javascript">
+  </script>
+  <script src="scripts/app-4aa12267da.js" type="text/javascript">
+  </script>
+  <div block-ui-container="" class="block-ui-container ng-scope">
+   <div class="block-ui-overlay">
+   </div>
+   <div aria-atomic="true" aria-live="assertive" class="block-ui-message-container">
+    <div class="block-ui-message ng-binding" ng-class="$_blockUiMessageClass">
+     Loading ...
+    </div>
+   </div>
+  </div>
+ </body>
+</html>

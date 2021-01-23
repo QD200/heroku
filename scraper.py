@@ -1,5 +1,5 @@
 #pylint:disable=W0311
-from bs4 import BeautifulSoup as bs4
+from bs4 import BeautifulSoup
 import requests
 import pandas as pd
 import datetime

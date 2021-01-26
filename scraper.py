@@ -257,12 +257,13 @@ def append_dict_as_row(file_name):
         dr = file_data.drop_duplicates(subset=['Match No'], keep='first')
         with open(file_path_p) as f:
             g = f.readlines()
-            if len(g) > 285:
+            if len(g) > 100:
                 
                 print('calling trim function')
                 tim()
                 shutil.move(file_path_p, file_path2)
             else:
+                print (len (g))
                 print('unable to call trim function because matches arent greater than specified number yet')   
             #with open('time.txt', 'w') as t:
 #                result_time = datetime.datetime.now()

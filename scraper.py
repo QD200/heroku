@@ -322,7 +322,7 @@ def job():
         gDriver = webdriver.Chrome(
         chrome_options=gChromeOptions, executable_path=ChromeDriverManager().install()
 )
-        url = 'https://www.fortebet.ug/#/app/virtualsoccer/results'
+        url = 'https://www.fortebet.ug/#/app/virtualsoccer'
 
         gDriver.get(url)
         time.sleep (3)

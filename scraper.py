@@ -18,6 +18,9 @@ import re
 import csv
 from csv import DictWriter
 from bs4 import BeautifulSoup
+from selenium import webdriver
+from webdriver_manager.chrome import ChromeDriverManager
+
 
 def tim():
     with open('time.txt', 'w') as f:
@@ -78,13 +81,21 @@ def final_s():
 #final_s()
 def data():
            
+        gChromeOptions = webdriver.ChromeOptions()
+        gChromeOptions.add_argument("window-size=1920x1480")
+        gChromeOptions.add_argument("disable-dev-shm-usage")
+        gDriver = webdriver.Chrome(
+    chrome_options=gChromeOptions, executable_path=ChromeDriverManager().install()
+)
+        url = 'https://www.fortebet.ug/#/app/virtualsoccer/results'
+
+        gDriver.get(url)
+        time.sleep (3)
+        page = gDriver.page_source
+
+
+        soup = BeautifulSoup(page, 'lxml')
         
-        API_KEY = 'fc60eb9e5b4e8371e265f9007e4a1523'
-        URL_TO_SCRAPE = 'https://www.fortebet.ug/#/app/virtualsoccer/results'
-        
-        payload = {'api_key': API_KEY, 'url': URL_TO_SCRAPE, 'render': 'true'}
-        r = requests.get('http://api.scraperapi.com', params=payload, timeout=60)
-        soup = BeautifulSoup(r.content, 'lxml')
         soup1 = soup.prettify()
         directory= os.path.dirname(os.path.realpath(__file__))
         filename = "virtuals.html"
@@ -304,14 +315,19 @@ def append_dict_as_row(file_name):
 #            os.remove(file_path)
 #            print("File Removed!")    
 def job():
-        
-        if __name__ == '__main__':
-                    API_KEY = 'fc60eb9e5b4e8371e265f9007e4a1523'
-                    URL_TO_SCRAPE = 'https://www.fortebet.ug/#/app/virtualsoccer'
-                
-        payload = {'api_key': API_KEY, 'url': URL_TO_SCRAPE, 'render': 'true'}
-        r = requests.get('http://api.scraperapi.com', params=payload, timeout=60)
-        soup = BeautifulSoup(r.content, 'lxml')
+         
+        gChromeOptions = webdriver.ChromeOptions()
+        gChromeOptions.add_argument("window-size=1920x1480")
+        gChromeOptions.add_argument("disable-dev-shm-usage")
+        gDriver = webdriver.Chrome(
+        chrome_options=gChromeOptions, executable_path=ChromeDriverManager().install()
+)
+        url = 'https://www.fortebet.ug/#/app/virtualsoccer/results'
+
+        gDriver.get(url)
+        time.sleep (3)
+        page = gDriver.page_source
+        soup = BeautifulSoup(page, 'lxml')        
         soup1 = soup.prettify()
        #i print(soup1)
         tea_list = []

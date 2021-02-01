@@ -21,6 +21,12 @@ from bs4 import BeautifulSoup
 from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
 
+gChromeOptions = webdriver.ChromeOptions()
+gChromeOptions.add_argument("window-size=1920x1480")
+gChromeOptions.add_argument("disable-dev-shm-usage")
+gDriver = webdriver.Chrome(
+chrome_options=gChromeOptions, executable_path=ChromeDriverManager().install()
+)
 
 def tim():
     with open('time.txt', 'w') as f:
@@ -80,13 +86,6 @@ def final_s():
             print('combined the two csv files and created the final virtuals dataframe\nAnd then deleted the scrapedfile')
 #final_s()
 def data():
-           
-        gChromeOptions = webdriver.ChromeOptions()
-        gChromeOptions.add_argument("window-size=1920x1480")
-        gChromeOptions.add_argument("disable-dev-shm-usage")
-        gDriver = webdriver.Chrome(
-    chrome_options=gChromeOptions, executable_path=ChromeDriverManager().install()
-)
         url = 'https://www.fortebet.ug/#/app/virtualsoccer/results'
 
         gDriver.get(url)
@@ -316,12 +315,7 @@ def append_dict_as_row(file_name):
 #            print("File Removed!")    
 def job():
          
-        gChromeOptions = webdriver.ChromeOptions()
-        gChromeOptions.add_argument("window-size=1920x1480")
-        gChromeOptions.add_argument("disable-dev-shm-usage")
-        gDriver = webdriver.Chrome(
-        chrome_options=gChromeOptions, executable_path=ChromeDriverManager().install()
-)
+        
         url = 'https://www.fortebet.ug/#/app/virtualsoccer'
 
         gDriver.get(url)

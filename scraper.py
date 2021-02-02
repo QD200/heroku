@@ -268,6 +268,7 @@ def append_dict_as_row(file_name):
                 file.close()
         
         file_data = pd.read_csv(file_path_p)
+        print (file_data.head ())
         file_path2 = os.path.join(directory,'clean')
         dr = file_data.drop_duplicates(subset=['Match No'], keep='first')
         with open(file_path_p) as f:

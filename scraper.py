@@ -272,7 +272,7 @@ def append_dict_as_row(file_name):
         dr = file_data.drop_duplicates(subset=['Match No'], keep='first')
         with open(file_path_p) as f:
             g = f.readlines()
-            if len(g) > 3:
+            if len(g) > 12:
                 
                 print('calling trim function')
                 tim()

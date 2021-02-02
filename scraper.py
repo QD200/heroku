@@ -31,7 +31,7 @@ chrome_options=gChromeOptions, executable_path=ChromeDriverManager().install()
 def tim():
     with open('time.txt', 'w') as f:
        x = datetime.datetime.now()      
-       b = x + timedelta(minutes=20) 
+       b = x + timedelta(minutes=18) 
        w = b.strftime("%b %d, %Y %H:%M") 
        f.write(str(w))       
 
@@ -70,7 +70,10 @@ def final_s():
             attachment = Attachment()
             attachment.file_content = FileContent(encoded)
             attachment.file_type = FileType('text/csv')
-            attachment.file_name = FileName('scraped.csv')
+            x = datetime.datetime.now() 
+            w = x.strftime("%d_%b_%Y")
+            filename = 'virtuals_'+str(w)+'.csv'                
+            attachment.file_name = FileName(filename)
             attachment.disposition = Disposition('attachment')
             attachment.content_id = ContentId('Example Content ID')
             message.attachment = attachment
@@ -267,7 +270,7 @@ def append_dict_as_row(file_name):
         dr = file_data.drop_duplicates(subset=['Match No'], keep='first')
         with open(file_path_p) as f:
             g = f.readlines()
-            if len(g) > 100:
+            if len(g) > 3:
                 
                 print('calling trim function')
                 tim()

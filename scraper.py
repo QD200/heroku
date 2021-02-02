@@ -55,8 +55,9 @@ def final_s():
             
             df_merge_col.to_csv(file_path3)
              
-            file_data = pd.read_csv(file_path)
-            
+            file_data = pd.read_csv(file_path3)
+            dr = file_data.drop_duplicates(subset=['Match No'], keep='first')
+            dr.to_csv(file_path3) 
             with open(file_path3, 'rb') as file:
                 data_ = file.read()
                 file.close()

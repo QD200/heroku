@@ -58,7 +58,7 @@ def final_s():
             file_data = pd.read_csv(file_path3)
             dr = file_data.drop_duplicates(subset=['Match No'], keep='first')
             dr.to_csv(file_path3) 
-            os.remove(file_path)
+          
             with open(file_path3, 'rb') as file:
                 data_ = file.read()
                 file.close()

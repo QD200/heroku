@@ -127,16 +127,14 @@ def extract():
             teams = re.findall(pattern1,str(g))
             scores = re.findall(pattern2, str(g))
             mat_nos = re.findall(pattern4, str(g))
-            dat_l =[]
+            
             mat_l = []
             sc_l = []
             tea_l =[]
             records = []
-            
-            for date in dates:
+           
                 
-                j = date.replace(',', '')
-                dat_l.append(j)
+            
             
             for mat_no in mat_nos[1:-5]:
                 mat_no = f'{mat_no}'
@@ -166,8 +164,8 @@ def extract():
                     t = f'\'{home} - {away}\''
                     tea_l.append(t)
             
-            for (a, b, c, d) in zip(dat_l, mat_l, tea_l, sc_l):
-               record = f'\'{a}\', {b}, {c}, {d}'
+            for (a, b, c) in zip( mat_l, tea_l, sc_l):
+               record = f'\'{a}\', {b}, {c}'
                
                records.append(record)
             res = list(map(eval, records)) 

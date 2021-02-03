@@ -265,7 +265,7 @@ def append_dict_as_row(file_name):
                 data = file.read()
                 file.close()
         
-        file_data = pd.read_csv(file_path_p,error_bad_lines=False)
+        file_data = pd.read_csv(file_path_p)
         print (file_data.head ())
         file_path2 = os.path.join(directory,'clean')
         dr = file_data.drop_duplicates(subset=['Match No'], keep='first')
@@ -417,7 +417,7 @@ def job():
         file_path = os.path.join(directory,'csvfiles/', filename)
         if os.path.isfile(file_path)==False:
             print("scrapedfile doesnot exists now creatig a new one")
-            df.to_csv(file_path, index=False) 
+            df.to_csv(file_path) 
             with open(file_path, 'rb') as file:
                 data = file.read()
                 file.close()  

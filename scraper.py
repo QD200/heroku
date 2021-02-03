@@ -48,16 +48,16 @@ def final_s():
             df_merge_col = pd.merge(f, h, on='Match No')
             del df_merge_col['HomeTeam_y']
             del df_merge_col['AwayTeam_y']
-            del df_merge_col['Date']
+            del df_merge_col['Unnamed: 0']
             df_merge_col = df_merge_col.rename(columns={'HomeTeam_x': 'HomeTeam','AwayTeam_x': 'AwayTeam' })
             
             print(df_merge_col.head())
             
-            df_merge_col.to_csv(file_path3)
+            df_merge_col.to_csv(file_path3, index=False)
              
             file_data = pd.read_csv(file_path3)
             dr = file_data.drop_duplicates(subset=['Match No'], keep='first')
-            dr.to_csv(file_path3) 
+            dr.to_csv(file_path3, index=False) 
           
             with open(file_path3, 'rb') as file:
                 print(file.readlines())
@@ -417,7 +417,7 @@ def job():
         file_path = os.path.join(directory,'csvfiles/', filename)
         if os.path.isfile(file_path)==False:
             print("scrapedfile doesnot exists now creatig a new one")
-            df.to_csv(file_path) 
+            df.to_csv(file_path, index=False) 
             with open(file_path, 'rb') as file:
                 data = file.read()
                 file.close()  

@@ -51,7 +51,7 @@ def final_s():
             del df_merge_col['Unnamed: 0']
             df_merge_col = df_merge_col.rename(columns={'HomeTeam_x': 'HomeTeam','AwayTeam_x': 'AwayTeam' })
             
-            print(df_merge_col.head())
+           
             
             df_merge_col.to_csv(file_path3, index=False)
              

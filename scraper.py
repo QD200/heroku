@@ -176,7 +176,7 @@ def extract():
             data_list = rest
             with open(file_path2,'w') as out:
                 csv_out=csv.writer(out)
-                csv_out.writerow(['Date','Match No','Teams', 'Scores'])
+                csv_out.writerow(['Match No','Teams', 'Scores'])
                 for row in data_list:
                     csv_out.writerow(row)
             print('Created the results.csv file')
@@ -187,7 +187,7 @@ def results_dataframe():
     file_path = os.path.join(directory,'clean/', filename)
     
     h = pd.read_csv(file_path) 
-    dat = []
+    
     h_list = []
     a_list = []
     mat = []
@@ -195,12 +195,11 @@ def results_dataframe():
     sca = []
     hs = []
     ha = []
-    date = h['Date']  
+    
     score2 = h['Scores']
     team2 = h['Teams']
     num2 = h['Match No']
-    for d in date:
-        dat.append(d)
+    
     for t in team2:
        j =  t.split('-')
        ht = j[0]
@@ -222,7 +221,7 @@ def results_dataframe():
     for n in num2:
         mat.append(n)
           
-    datta = zip(dat, mat, h_list, a_list, sch, sca, hs, ha)
+    datta = zip(mat, h_list, a_list, sch, sca, hs, ha)
     tdata = list(datta)
     with open(file_path,'w') as out:
         csv_out=csv.writer(out)

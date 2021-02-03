@@ -60,6 +60,7 @@ def final_s():
             dr.to_csv(file_path3) 
           
             with open(file_path3, 'rb') as file:
+                print(file.readlines())
                 data_ = file.read()
                 file.close()
         

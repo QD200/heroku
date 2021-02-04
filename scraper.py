@@ -40,9 +40,7 @@ def insert():
                                       database="dcad7edr5o2nkg")
     
         cursor = connection.cursor()
-        directory= os.path.dirname(os.path.realpath(__file__))
-        final_r = "virtuals.csv"
-        file_path3 = os.path.join(directory, final_r)
+        
         with open(file_path3, 'r') as f:
             
             # Notice that we don't need the `csv` module.

@@ -32,13 +32,9 @@ def insert():
     try:
         directory= os.path.dirname(os.path.realpath(__file__))
         filename = "virtual.csv"
-        file_path3 = os.path.join(directory,'clean/', filename)      
-        connection = psycopg2.connect(user="wegcbkgrlroaaa",
-                                      password="9bafd321f5a3b84680c4961d1650e3cb5d1435d688651eb79d85ab7045417c86",
-                                      host="ec2-52-45-140-104.compute-1.amazonaws.com",
-                                      port="5432",
-                                      database="dcad7edr5o2nkg")
-    
+        file_path3 = os.path.join(directory,'clean/', filename)
+        DATABASE_URL = os.environ['DATABASE_URL']
+        connection = psycopg2.connect(DATABASE_URL, sslmode='require')
         cursor = connection.cursor()
         
         with open(file_path3, 'r') as f:

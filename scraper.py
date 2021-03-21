@@ -77,7 +77,7 @@ def data():
 def tim():
     with open('time.txt', 'w') as f:
        x = datetime.datetime.now()      
-       b = x + timedelta(minutes=18) 
+       b = x + timedelta(minutes=15) 
        w = b.strftime("%b %d, %Y %H:%M") 
        f.write(str(w))       
 

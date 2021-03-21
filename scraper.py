@@ -299,7 +299,7 @@ def append_dict_as_row(file_name):
         with open(file_path_p) as f:
             g = f.readlines()
            
-            if len(g) > 12:
+            if len(g) > 6:
                 
                 print('calling trim function')
                 tim()

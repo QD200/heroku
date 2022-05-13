@@ -8,8 +8,8 @@ import base64
 import shutil
 import os.path
 from apikey import *
-from sendgrid import SendGridAPIClient
-from sendgrid.helpers.mail import (Mail, Attachment, FileContent, FileName, FileType, Disposition, ContentId)
+# from sendgrid import SendGridAPIClient
+# from sendgrid.helpers.mail import (Mail, Attachment, FileContent, FileName, FileType, Disposition, ContentId)
 import schedule
 import time
 import pytz
@@ -29,6 +29,7 @@ chrome_options=gChromeOptions, executable_path=ChromeDriverManager().install()
 )
 
 def insert():
+    print("done")
     try:
         directory= os.path.dirname(os.path.realpath(__file__))
         filename = "virtual.csv"
@@ -36,6 +37,7 @@ def insert():
         DATABASE_URL = os.environ['DATABASE_URL']
         connection = psycopg2.connect(DATABASE_URL, sslmode='require')
         cursor = connection.cursor()
+
         
         with open(file_path3, 'r') as f:
             
@@ -60,7 +62,7 @@ def insert():
 
 
 def data():
-        url = 'https://www.fortebet.ug/#/app/virtualsoccer/results'
+        url = 'https://www.premierbet.ug/prematch/virtualSoccer/results/true'
         gDriver.get(url)
         time.sleep (3)
         page = gDriver.page_source
@@ -135,7 +137,6 @@ def final_s():
             os.remove(file_path)
             print('combined the two csv files and created the final virtuals dataframe\nAnd then deleted the scrapedfile')
 
-
 def extract():
        data()   
        directory= os.path.dirname(os.path.realpath(__file__))
@@ -145,26 +146,46 @@ def extract():
        file_path2 = os.path.join(directory,'clean/', filename2)
        with open(file_path)  as f:
             g = f.readlines()
-            pattern1 = '[V][-|.]\S+\W[-]\W[V][-|.]\S+'  #pattern for teams
-            pattern2 = '\d[:]\d\W[(]\d[:]\d[)]'   #pattern for scores
-            pattern3 = '\D\D\D\W\d\d[,]\W\d\d\d\d\W\d\d[:]\d\d'   #pattern for date
-            pattern4 = "    (\d{1,3})[^:]"  #pattern for match number
+            soup = BeautifulSoup(str(g),"lxml")
+            pattern1 = '\"[V][-|.]\S+\W[-]\W[V][-|.]\S+\"'  #pattern for teams
+            pattern3 = '\d\d[:]\d\d'   #pattern for date
+            pattern4 = ">(\d{1,3})<"  #pattern for match number
             dates = re.findall(pattern3, str(g))
+
+            all_team = soup.find_all("div", class_="vs_event ellipsis_live")
+            teams_list = re.findall(pattern1,str(all_team))
+            team_placeholder = []
+            for team in teams_list:
+                m=team.replace(u"\xa0", u' ')
+                n=m.replace("\"","")
+                team_placeholder.append(n)
             
-            teams = re.findall(pattern1,str(g))
-            scores = re.findall(pattern2, str(g))
-            mat_nos = re.findall(pattern4, str(g))
+            scores_placeholder = []
+
             
+            ht_score_pattern = '[(]\d[-]\d[)]'
+            ft_score_pattern = '>(\d[-]\d)<'
+            all_ft_scores = re.findall(ft_score_pattern, str(sss))
+            all_ht_scores = re.findall(ht_score_pattern, str(sss))
+            for (a,b) in zip(all_ft_scores,all_ht_scores):
+                w = f'{a} {b}'.replace("-",":")
+                scores_placeholder.append(w)
+            
+            match_nos_list= soup.find_all("div", class_="vs_event_id")
+
+            teams = team_placeholder
+            scores = scores_placeholder
+            mat_nos = re.findall(pattern4, str(match_nos_list))  
             
             mat_l = []
             sc_l = []
             tea_l =[]
             records = []
             
-            for mat_no in mat_nos[1:-5]:
+            for mat_no in mat_nos:
                 mat_no = f'{mat_no}'
                 mat_l.append(mat_no)  
-            for score in scores[:-3]:
+            for score in scores:
                 pattern = '\D'
                 s = re.split(pattern, score)
                 h_f= s[0]#home full time score
@@ -173,10 +194,9 @@ def extract():
                 a_h = s[4]#away half time score
                 score = f'\'{h_f}:{a_f} ({h_h}:{a_h})\''               
                 sc_l.append(score)
-            for team in teams[:-3]:
-                tea = team[:-4]
+            for team in teams:
                 pattern = '[-]'
-                te = re.split(pattern, tea)
+                te = re.split(pattern, team)
                 if len(te) == 4:
                     home = te[1]   #home team
                     away = te[-1]       #away team
@@ -184,7 +204,7 @@ def extract():
                     tea_l.append(t)
                  
                 else:
-                    home = te[0]   #home team
+                    home = te[1]   #home team
                     away = te[-1]       #away team
                     t = f'\'{home} - {away}\''
                     tea_l.append(t)
@@ -321,54 +341,54 @@ def append_dict_as_row(file_name):
             
 def job():
         
-        url = 'https://www.fortebet.ug/#/app/virtualsoccer'
+        url = 'https://www.premierbet.ug/prematch/virtualSoccer'
         gDriver.get(url)
         time.sleep (3)
         page = gDriver.page_source
+        # page=open("../3v.html")
         soup = BeautifulSoup(page, 'lxml')                 
         tea_list = []
-        tea = soup.find_all('div' ,class_="ng-binding")
-        pattern = '[V][-|.]\S+\W[-]\W[V][-|.]\S+' 
+        tea = soup.find_all('div' ,class_="home_away")
+        pattern = '[V][-|.]\S+\W[-]\W[V][-|.]\S+\"' 
         t = re.findall(pattern, str(tea))
-                
+        new_t = []
         for i in t:
-                       
-                        h = i.replace('\\n\',', '')
-                        pattern = '[-]'
-                        te = re.split(pattern, h)                                            
-                        if len(te) == 4:
-                                HomeTeam = te[1]   #home team
-                                HomeTeam.rstrip()
-                                AwayTeam = te[-1]       #away team
-                                AwayTeam = AwayTeam[:-7]
-                                AwayTeam.rstrip()
-                        else:
-                                HomeTeam = te[0]   #home team
-                                HomeTeam.rstrip()
-                                AwayTeam = te[-1]
-                                AwayTeam = AwayTeam[:-7]
-                                AwayTeam.rstrip()
-                        data = [HomeTeam, AwayTeam]     
-                       
-                        tea_list.append(data)
+            new_t.append(i[:-1])
+        t=new_t
+        print("t in production ",t)                
+        for i in t:                       
+            h = i.replace('\\n\',', '')
+            pattern = '[-]'
+            te = re.split(pattern, h)
+            print("h", te)                                         
+            if len(te) == 4:
+                HomeTeam = te[1]   #home team
+                HomeTeam.rstrip()
+                AwayTeam = te[-1]       #away team
+                AwayTeam.rstrip()
+            else:
+                HomeTeam = te[1]   #home team
+                HomeTeam.rstrip()
+                AwayTeam = te[-1]
+                AwayTeam.rstrip()
+            data = [HomeTeam, AwayTeam]     
+           
+            tea_list.append(data)
         odd = []
         mat_list = []
-        odds1 = soup.find_all('div', class_='virtualsoccer-offer-match-header')
+        odds1 = soup.find_all('div', class_='event_id')
         
-        
-        for i in odds1:
-                
-                pattern4 = "(\d{1,3})" 
-                h = re.findall(pattern4, str(i))
-                mat_list.append(h[0])
-    
+        for i in odds1:                
+            pattern4 = ">\d{1,3}<" 
+            h = re.findall(pattern4, str(i))
+            mat_list.append(h[0][1:-1])           
             
-        odds = soup.find_all('span' ,class_="ng-binding")
+        odds = soup.find_all('div' ,class_="odd")
         for i in odds:
-                    pattern = '\d+[.]\d+'
-                    h = re.findall(pattern, str(i))
-                    if len(h)>0:
-                        odd.append(h[0])
+            pattern = '\d+[.]\d+'
+            h = re.findall(pattern, str(i))
+            if len(h)>0:
+                odd.append(h[0])
                   
         set1 = odd[:32]
         set2 = odd[32:64]
@@ -382,27 +402,31 @@ def job():
         final = list(zip(mat_list, tea_list, odd))
                
         for i in final:
-                   mat = i[0]
-                   tea = i[1]
-                   odds = i[2]
-                   i = odds
-                   
-                    
-                    
-                   res = {     'Match No': mat, 'HomeTeam':tea[0], 'AwayTeam': tea[1], 'FTH': i[0], 'FTD': i[1], 'FTA': i[2],
-                                   'FT1X': i[3], 'FTX2': i[4], 'HTH': i[5], 'HTD': i[6], 'HTA': i[7], 'HT1X': i[8], 'HTX2': i[9], 'U1.5': i[10], 'o1.5': i[11],
-                                   'U2.5': i[12], 'o2.5': i[13], 'U3.5': i[14], 'o3.5': i[15], 'U4.5': i[16], 'o4.5': i[17], 'CS-1:0': i[18], 'CS-2:0': i[21],
-                                   'CS-2:1': i[24], 'CS-0:0': i[19], 'CS-1:1': i[22],  'CS-2:2': i[25],  'CS-0:1': i[20],
-                                   'CS-0:2': i[23],
-                                   'CS-1:2': i[26],
-                                   'Other': i[27],
-                                   'BTS_Y':i[28],
-                                   'BTS_N': i[30],
-                                   'HT_YY': i[29],
-                                   'HT_NY':i[31]   }
-                   res_list.append(res)
-        
-        data=res_list 
+            mat = i[0]
+            tea = i[1]
+            odds = i[2]
+            i = odds
+            try:
+                res = {     'Match No': mat, 'HomeTeam':tea[0], 'AwayTeam': tea[1], 'FTH': i[0], 'FTD': i[1], 'FTA': i[2],
+                           'FT1X': i[3], 'FTX2': i[4], 'HTH': i[5], 'HTD': i[6], 'HTA': i[7], 'HT1X': i[8], 'HTX2': i[9], 'U1.5': i[10], 'o1.5': i[11],
+                           'U2.5': i[12], 'o2.5': i[13], 'U3.5': i[14], 'o3.5': i[15], 'U4.5': i[16], 'o4.5': i[17], 'CS-1:0': i[18], 'CS-2:0': i[21],
+                           'CS-2:1': i[24], 'CS-0:0': i[19], 'CS-1:1': i[22],  'CS-2:2': i[25],  'CS-0:1': i[20],
+                           'CS-0:2': i[23],
+                           'CS-1:2': i[26],
+                           'Other': i[27],
+                           'BTS_Y':i[28],
+                           'BTS_N': i[30],
+                           'HT_YY': i[29],
+                           'HT_NY':i[31]   }
+                res_list.append(res)
+
+            except IndexError as e:
+                job()
+           
+            
+            
+         
+        data=res_list
         df=pd.DataFrame(data=data)
         if len(df.index) == 0:
             print("Scraped nothing but now retrying\n")
